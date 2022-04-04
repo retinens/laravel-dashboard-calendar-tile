@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CalendarTile;
+namespace Retinens\CalendarTile;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;

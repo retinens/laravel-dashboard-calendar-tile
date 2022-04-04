@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CalendarTile;
+namespace Retinens\CalendarTile;
 
 use Carbon\Carbon;
 use DateTime;
@@ -21,9 +21,9 @@ class FetchCalendarEventsCommand extends Command
             $events = collect(Event::get(null, null, [], $calendarId))
                 ->map(function (Event $event) {
                     $sortDate = $event->getSortDate();
-
                     return [
                         'name' => $event->name,
+                        'is_all_day' => $event->isAllDayEvent(),
                         'date' => Carbon::createFromFormat('Y-m-d H:i:s', $sortDate)->format(DateTime::ATOM),
                     ];
                 })

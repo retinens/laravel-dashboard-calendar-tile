@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CalendarTile;
+namespace Retinens\CalendarTile;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -34,6 +34,7 @@ class CalendarStore
                 $carbon = Carbon::createFromTimeString($event['date']);
 
                 $event['date'] = $carbon;
+                $event['time'] = $carbon->format('H:i');
                 $event['withinWeek'] = $event['date']->diffInDays() < 7;
                 $event['presentableDate'] = $this->getPresentableDate($carbon);
 

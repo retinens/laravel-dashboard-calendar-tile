@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\CalendarTile\Tests;
+namespace Retinens\CalendarTile\Tests;
 
 use PHPUnit\Framework\TestCase;
 

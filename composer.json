@@ -1,17 +1,23 @@
 {
-    "name": "spatie/laravel-dashboard-calendar-tile",
+    "name": "retinens/laravel-dashboard-calendar-tile",
     "description": "A calendar tile for Laravel Dashboard",
     "keywords": [
-        "spatie",
-        "laravel-dashboard-calendar-tile"
+        "laravel-dashboard-calendar-tile",
+        "laravel-dashboard-calendar-plus-tile"
     ],
-    "homepage": "https://github.com/spatie/laravel-dashboard-calendar-tile",
+    "homepage": "https://github.com/retinens/laravel-dashboard-calendar-tile",
     "license": "MIT",
     "authors": [
         {
             "name": "Freek Van der Herten",
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Lucas Houssa",
+            "email": "lucas@retinens.com",
+            "homepage": "https://retinens.com",
             "role": "Developer"
         }
     ],
@@ -25,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\CalendarTile\\": "src"
+            "Retinens\\CalendarTile\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\CalendarTile\\Tests\\": "tests"
+            "Retinens\\CalendarTile\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\CalendarTile\\CalendarTileServiceProvider"
+                "Retinens\\CalendarTile\\CalendarTileServiceProvider"
             ]
         }
     },
